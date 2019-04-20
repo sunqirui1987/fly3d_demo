@@ -4,10 +4,8 @@ import (
 	"fmt"
 	"runtime"
 
-	log "github.com/sirupsen/logrus"
 	"github.com/suiqirui1987/fly3d_demo/samples"
 
-	"github.com/suiqirui1987/fly3d/core"
 	"github.com/suiqirui1987/fly3d/engines"
 	"github.com/suiqirui1987/fly3d/windows"
 )
@@ -16,10 +14,7 @@ func main() {
 	runtime.LockOSThread()
 	fmt.Print("Engine Example \r\n")
 
-	core.GlobalFly3D.ResRepository = "/Users/qiruisun/gitlab/golang-fly3d-engine/"
-	if core.GlobalFly3D.IsDebug {
-		log.SetLevel(log.DebugLevel)
-	}
+	//core.GlobalFly3D.SetIsDebug(true)
 
 	appoption := &windows.AppOption{
 		Width:  600,

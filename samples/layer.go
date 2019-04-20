@@ -1,7 +1,6 @@
 package samples
 
 import (
-	"github.com/suiqirui1987/fly3d/core"
 	"github.com/suiqirui1987/fly3d/engines"
 	"github.com/suiqirui1987/fly3d/math32"
 	"github.com/suiqirui1987/fly3d/module/cameras"
@@ -19,6 +18,6 @@ func Layer_Sample(scene *engines.Scene, app *windows.App) {
 	// This attaches the camera to the canvas
 	camera.AttachControl(app)
 
-	layers.NewLayer("1", core.GlobalFly3D.ResRepository+"example/Assets/Layer0_0.png", scene, true, nil)
+	layers.NewLayer("1", ResRepository+"Assets/Layer0_0.png", scene, true, nil)
 
 }
