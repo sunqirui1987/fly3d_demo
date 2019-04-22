@@ -32,8 +32,12 @@ func main() {
 	//layer
 	//samples.Layer_Sample(scene, app)
 	//samples.BoxMesh_Sample(scene, app)
-	samples.Shadow_Sample(scene, app)
-
+	//samples.Shadow_Sample(scene, app)
+	//samples.Light_Sample(scene, app)
+	//samples.Fog_Sample(scene, app)
+	//samples.Camera_Collisions_Sample(scene, app)
+	//samples.Animations_Sample(scene, app)
+	samples.Animations_Particle_Sample(scene, app)
 	engine.RunRenderLoop(func() {
 		scene.Render()
 	})
