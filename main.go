@@ -80,7 +80,7 @@ func main() {
 	//core.GlobalFly3D.SetIsDebug(true)
 
 	appoption := &windows.AppOption{
-		Width:  600,
+		Width:  800,
 		Height: 600,
 	}
 	var err error
@@ -96,14 +96,15 @@ func main() {
 	scene = engines.NewScene(engine)
 
 	//layer
-	samples.Layer_Sample(scene, app)
+	//samples.Layer_Sample(scene, app)
 	//samples.BoxMesh_Sample(scene, app)
 	//samples.Shadow_Sample(scene, app)
 	//samples.Light_Sample(scene, app)
 	//samples.Fog_Sample(scene, app)
 	//samples.Camera_Collisions_Sample(scene, app)
 	//samples.Animations_Sample(scene, app)
-	//samples.Animations_Particle_Sample(scene, app)
+	samples.Animations_Particle_Sample(scene, app)
+
 	engine.RunRenderLoop(func() {
 
 		if scene != nil {
