@@ -11,7 +11,7 @@ import (
 	"github.com/suiqirui1987/fly3d/windows"
 )
 
-func Fog_Sample(scene *engines.Scene, app *windows.App) {
+func Fog_Sample(scene *engines.Scene, app windows.IWindow) {
 
 	var camera = cameras.NewFreeCamera("Camera", math32.NewVector3(0, 0, -20), scene)
 	camera.SetTarget(math32.NewVector3(0, 0, 0))

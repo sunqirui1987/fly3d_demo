@@ -8,7 +8,7 @@ import (
 	"github.com/suiqirui1987/fly3d/windows"
 )
 
-func Layer_Sample(scene *engines.Scene, app *windows.App) {
+func Layer_Sample(scene *engines.Scene, app windows.IWindow) {
 
 	camera := cameras.NewArcRotateCamera("Camera", 0, 0, 10, math32.NewVector3(0, 0, 0), scene)
 

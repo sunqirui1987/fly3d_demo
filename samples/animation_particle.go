@@ -15,7 +15,7 @@ import (
 	"github.com/suiqirui1987/fly3d/windows"
 )
 
-func Animations_Particle_Sample(scene *engines.Scene, app *windows.App) {
+func Animations_Particle_Sample(scene *engines.Scene, app windows.IWindow) {
 
 	lights.NewPointLight("Omni", math32.NewVector3(0, 2, 8), scene)
 	var camera = cameras.NewArcRotateCamera("ArcRotateCamera", 1, 0.8, 20, math32.NewVector3(0, 0, 0), scene)

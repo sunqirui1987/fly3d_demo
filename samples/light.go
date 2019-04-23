@@ -11,7 +11,7 @@ import (
 	"github.com/suiqirui1987/fly3d/windows"
 )
 
-func Light_Sample(scene *engines.Scene, app *windows.App) {
+func Light_Sample(scene *engines.Scene, app windows.IWindow) {
 
 	var camera = cameras.NewArcRotateCamera("Camera", 0, 0, 10, math32.NewVector3Zero(), scene)
 	camera.SetPosition(math32.NewVector3(-10, 10, 0))

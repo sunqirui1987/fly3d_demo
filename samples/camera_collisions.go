@@ -12,7 +12,7 @@ import (
 	"github.com/suiqirui1987/fly3d/windows"
 )
 
-func Camera_Collisions_Sample(scene *engines.Scene, app *windows.App) {
+func Camera_Collisions_Sample(scene *engines.Scene, app windows.IWindow) {
 
 	// Lights
 	lights.NewDirectionalLight("Omni", math32.NewVector3(-2, -5, 2), scene)
@@ -45,7 +45,7 @@ func Camera_Collisions_Sample(scene *engines.Scene, app *windows.App) {
 
 	camera.OnCollide = func(colmesh interfaces.IMesh) {
 		if colmesh.GetName() == "box" {
-			camera.Position = math32.NewVector3(0, -8, -20)
+			//camera.Position = math32.NewVector3(0, -8, -20)
 		}
 	}
 
