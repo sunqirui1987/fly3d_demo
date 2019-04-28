@@ -51,7 +51,7 @@ case "$1" in
         ;;
   *)
 	FULLPATH=/etc/init.d/$PIDNAME
-	echo "Usage: $FULLPATH {start|stop|restart|force-reload|status|configtest|terminate}"
+	echo "Usage: $FULLPATH {js|android|ios|os}"
 	exit 1
 	;;
 esac
